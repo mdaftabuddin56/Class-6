@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+div{
+    background-color: aquamarine;
+    position: sticky;
+    top: 0;
+}
+nav{
+    background-color: rgb(231, 230, 230);
+    position: sticky;
+    top: 0; 
+}
+nav ul{
+    display: flex;
+    list-style-type:none;
+    Justify-content: center; 
+}
+nav ul li{
+    position:relative;
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    text-decoration:none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    display:inline-block;
+    font-family: sans-serif;
+}
+nav ul li:hover > a{
+    background-color: red;
+    color: white;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+
+nav ul li ul{
+    position: absolute;
+    display: none;
+    left: 50px;
+    background-color: orange;
+}
+nav ul li ul li a{
+    color: white
+}
+nav ul li ul li ul{
+    left: 100%;
+    top: 0;
+}
